@@ -6,7 +6,8 @@
 [中文](./README_zh_CN.md)
 
 <!-- start autogeneration tags -->
-* `2.0.17`, `latest`
+* `2.0.18`, `latest`
+* `2.0.17`
 * `2.0.16`
 * `2`, `2.0`, `2.0.15`, `stable`, `stable-2.0.15`
 * `2.0`, `2.0.14`, `stable-2.0.14`
@@ -95,6 +96,15 @@ docker run -d -it  \
       --name factorio \
       factoriotools/factorio
 docker attach factorio
+```
+
+### RCON (2.0.18+)
+
+Alternativly (e.g. for scripting) the RCON connection can be used to send commands to the running factorio server.
+This does not require the RCON connection to be exposed.
+
+```shell
+docker exec factorio rcon /h
 ```
 
 ### Upgrading
